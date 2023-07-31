@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architect - Rinat Rakhmatulin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fb4499aa63.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ------music------ -->
+
+    <div id="music-group">
+        <audio id="music-id" loop>
+            <source src="music/Clair-de-lune_Claude-Debussy.ogg" type="audio/ogg">
+            <source src="music/Clair de lune_Claude Debussy.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <a href="#no_scroll" id="play">Play background music On/Off</a>
+    </div>
+<!-- ------header------ -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="https://www.rakhmat.info/"><img src="images/logo.png" alt="logo" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Architect and BIM specialist</p>
+                <h1>Hi, I'm <span>Rinat Rakhmatulin</span> <br>
+                this is my personal website </h1>
+            </div>
+        </div>
+    </div>
+
+<!-- ------about------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user's photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-title">About Me</h1>
+                    <p class="about-text">I am an architect from the city of Saratov. 
+                        In 2008 he graduated with honors from PGMSK with a degree in Architecture with the qualification of a technician. 
+                        In 2014 he graduated with honors from SSTU. Gagarina Yu.A. in the specialty "Architecture" with the qualification "architect". 
+                        I have been in the design business since 2011. The directions of BIM design and parametric architecture are a priority for me. 
+                        I will consider job offers where knowledge of BIM design and node based programming is required.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('tab-1')">Software skills</p>
+                        <p class="tab-links" onclick="opentab('tab-2')">Programming languages skills</p>
+                        <p class="tab-links" onclick="opentab('tab-3')">Languages skills</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="tab-1">
+                        <ul>
+                            <li><span>1</span><br>Revit</li>
+                            <li><span>2</span><br>Revit</li>
+                            <li><span>3</span><br>Revit</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="tab-2">
+                        <ul>
+                            <li><span>1</span><br>Python</li>
+                            <li><span>2</span><br>Python</li>
+                            <li><span>3</span><br>Python</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="tab-3">
+                        <ul>
+                            <li><span>1</span><br>Enlish</li>
+                            <li><span>2</span><br>Italian</li>
+                            <li><span>3</span><br>Russian</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------services------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="services-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <span class="material-symbols-outlined" id="cottage">cottage</span>
+                    <h2>Architecture</h2>
+                    <P>Text text text text text text text text text text text text text text 
+                        text text text text text text text text text text text text text text text</P>
+
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" id="deployed_code">deployed_code</span>
+                    <h2>BIM</h2>
+                    <P>Text text text text text text text text text text text text text text 
+                        text text text text text text text text text text text text text text text</P>
+
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" id="real_estate_agent">real_estate_agent</span>
+                    <h2>Models</h2>
+                    <P>Text text text text text text text text text text text text text text 
+                        text text text text text text text text text text text text text text text</P>
+
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- ------portfolio------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="portfolio-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Work-1</h3>
+                        <p>Text text text text text text text text text text</p>
+                        <a href="#"><span class="material-symbols-outlined">link</span></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Work-2</h3>
+                        <p>Text text text text text text text text text text</p>
+                        <a href="#"><span class="material-symbols-outlined">link</span></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Work-3</h3>
+                        <p>Text text text text text text text text text text</p>
+                        <a href="#"><span class="material-symbols-outlined">link</span></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-4.png" alt="work-4">
+                    <div class="layer">
+                        <h3>Work-4</h3>
+                        <p>Text text text text text text text text text text</p>
+                        <a href="#"><span class="material-symbols-outlined">link</span></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-5.png" alt="work-5">
+                    <div class="layer">
+                        <h3>Work-5</h3>
+                        <p>Text text text text text text text text text text</p>
+                        <a href="#"><span class="material-symbols-outlined">link</span></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-6.png" alt="work-6">
+                    <div class="layer">
+                        <h3>Work-6</h3>
+                        <p>Text text text text text text text text text text</p>
+                        <a href="#"><span class="material-symbols-outlined">link</span></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://issuu.com/ar.rakhmat/docs/portfolio_rinat_rakhmatulin_eng_g6_300ppi" class="extra-port">See more</a>
+        </div>
+    </div>
+
+<!-- ------contact------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="contact-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> ar.rakhmatulin@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+39 331 899 49 51</p>
+                    <div class="social-icons">
+                        <a href="https://t.me/Ar_Rakhmat"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.facebook.com/rinat.rakhmatulin.3/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ar.rakhmat/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://medium.com/@ar.rakhmat"><i class="fa-brands fa-medium"></i></a>
+                    </div>
+                    <a href="cv/my-cv.pdf" download class="cv">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <textarea name="message" rows="8" placeholder="Your Message"></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------footer------ -->
+
+    <div id="footer">
+        <p>Copyright © Ar.Rakhmat. Made with <i class="fa-solid fa-heart"></i> in 2023</p>
+    </div>
+
+<!-- ------JS-Tab------ -->
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    } 
+</script>
+
+<!-- ------JS-Volume------ -->
+
+<script>
+    let audio = document.getElementById("music-id");
+    audio.volume = 0.5;
+</script>
+
+<!-- ------JS-Play------ -->
+
+<script>
+    
+    document.getElementById('play').addEventListener('click', function (){
+        var music = document.getElementById('music-id');
+        if(this.className == 'is-playing'){
+            this.className = "";
+            this.innerHTML = "Play";
+            music.pause();
+        }else{
+            this.className = "is-playing";
+            this.innerHTML = "Pause";
+            music.play();
+        }
+    });
+
+
+</script>
+
+<!-- ------JS-sidemenu------ -->
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<!-- ------JS-contact-form------ -->
+
+
+
+</body>
+</html>
