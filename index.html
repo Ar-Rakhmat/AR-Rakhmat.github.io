@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architect - Rinat Rakhmatulin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/fb4499aa63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+</head>
+<body>
+
+<!-- ------Music------ -->
+
+    <div id="music-group">
+        <audio id="music-id" loop>
+            <source src="music/Clair-de-lune_Claude-Debussy.ogg" type="audio/ogg">
+            <source src="music/Clair de lune_Claude Debussy.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <a href="#no_scroll" id="play">Play background music On/Off</a>
+    </div>
+<!-- ------Header------ -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="https://www.rakhmat.info/"><img src="images/logo.png" alt="logo" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Architect and BIM specialist</p>
+                <h1>Hi, I'm <span>Rinat Rakhmatulin</span> <br>
+                this is my personal website </h1>
+            </div>
+        </div>
+    </div>
+
+<!-- ------About------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user's photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-title">About Me</h1>
+                    <p class="about-text">I am an architect from the city of Saratov. 
+                        In 2008 he graduated with honors from PGMSK with a degree in Architecture with the qualification of a technician. 
+                        In 2014 he graduated with honors from SSTU. Gagarina Yu.A. in the specialty "Architecture" with the qualification "architect". 
+                        I have been in the design business since 2011. The directions of BIM design and parametric architecture are a priority for me. 
+                        I will consider job offers where knowledge of BIM design and node based programming is required.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('tab-1')">Software skills</p>
+                        <p class="tab-links" onclick="opentab('tab-2')">Programming languages skills</p>
+                        <p class="tab-links" onclick="opentab('tab-3')">Languages skills</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="tab-1">
+                        <ul>
+                            <li><span>1</span><br>Revit</li>
+                            <li><span>2</span><br>Revit</li>
+                            <li><span>3</span><br>Revit</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="tab-2">
+                        <ul>
+                            <li><span>1</span><br>Python</li>
+                            <li><span>2</span><br>Python</li>
+                            <li><span>3</span><br>Python</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="tab-3">
+                        <ul>
+                            <li><span>1</span><br>Enlish</li>
+                            <li><span>2</span><br>Italian</li>
+                            <li><span>3</span><br>Russian</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------Services------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="services-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <span class="material-symbols-outlined" id="cottage">cottage</span>
+                    <h2>Architecture</h2>
+                    <P>Text text text text text text text text text text text text text text 
+                        text text text text text text text text text text text text text text text</P>
+
+                    <a data-fancybox data-src="#hidden-architecture" href="javascript:;">Learn more</a>
+
+                    <div style="display: none; background: #202136; width: 500px; height: 300px;" id="hidden-architecture">
+                        <p>Course on BIM-management III-stream 2022-2023 The course is devoted to the reconstruction of objects of the XVI All-Russian industrial and art exhibition of 1896 in Nizhny Novgorod. Our team carried out section No. 32 with the pavilions of the Department of Udelov and the photographer M. Dmitriev located on it.
+                            The following programs were used on the course: Renga, NanoCAD, Model Studio CS, Revit, Dropbox, CADLib, Pilot-BIM, Larix.EST, Blender, D5 Render, ArchiCAD, Rhino, Twinmotion.</p>
+                    </div>
+
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" id="deployed_code">deployed_code</span>
+                    <h2>BIM</h2>
+                    <P>Text text text text text text text text text text text text text text 
+                        text text text text text text text text text text text text text text text</P>
+
+                    <a data-fancybox data-src="#hidden-bim" href="javascript:;">Learn more</a>
+
+                    <div style="display: none; background: #202136; width: 500px; height: 300px;" id="hidden-bim">
+                        <p>Course on BIM-management III-stream 2022-2023 The course is devoted to the reconstruction of objects of the XVI All-Russian industrial and art exhibition of 1896 in Nizhny Novgorod. Our team carried out section No. 32 with the pavilions of the Department of Udelov and the photographer M. Dmitriev located on it.
+                            The following programs were used on the course: Renga, NanoCAD, Model Studio CS, Revit, Dropbox, CADLib, Pilot-BIM, Larix.EST, Blender, D5 Render, ArchiCAD, Rhino, Twinmotion.</p>
+                    </div>
+
+                </div>
+                <div>
+                    <span class="material-symbols-outlined" id="real_estate_agent">real_estate_agent</span>
+                    <h2>Models</h2>
+                    <P>Text text text text text text text text text text text text text text 
+                        text text text text text text text text text text text text text text text</P>
+
+                    <a data-fancybox data-src="#hidden-models" href="javascript:;">Learn more</a>
+
+                    <div style="display: none; background: #202136; width: 500px; height: 300px;" id="hidden-models">
+                        <p>Course on BIM-management III-stream 2022-2023 The course is devoted to the reconstruction of objects of the XVI All-Russian industrial and art exhibition of 1896 in Nizhny Novgorod. Our team carried out section No. 32 with the pavilions of the Department of Udelov and the photographer M. Dmitriev located on it.
+                            The following programs were used on the course: Renga, NanoCAD, Model Studio CS, Revit, Dropbox, CADLib, Pilot-BIM, Larix.EST, Blender, D5 Render, ArchiCAD, Rhino, Twinmotion.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- ------Portfolio------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="portfolio-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work-1">
+                    <div class="layer">
+                        <h3>Work-1</h3>
+                        <p>Text text text text text text text text text text</p>
+                        <a data-fancybox="gallery-1" data-src="#hidden-description-1" href="javascript:;"><span class="material-symbols-outlined">link</span></a>
+                        <div class="gallery-work-1" style="display:none">
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_1.jpg"><img src="images/images-work-1/Screenshot_1.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_2.jpg"><img src="images/images-work-1/Screenshot_2.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_3.jpg"><img src="images/images-work-1/Screenshot_3.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_4.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_5.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_6.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_7.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_8.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_9.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_10.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_11.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_12.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_13.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_14.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_15.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_16.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_17.jpg"></a>
+                            <a data-fancybox="gallery-1" href="images/images-work-1/Screenshot_18.jpg"></a>
+                            <a data-fancybox="gallery-1" data-type="iframe" data-src="https://twinmotion.unrealengine.com/presentation/v6FsVUJjpdLeKNg-" href="javascript:;"><img src="images/images-work-1/3d-model.jpg"></a>
+                            <a data-fancybox="gallery-1" data-type="iframe" data-src="https://pano.autodesk.com/pano.html?url=jpgs/a4b66cdb-6e5d-45e7-9c75-d93954ba61a5&version=2" href="javascript:;"><img src="images/images-work-1/360-panorama.jpg"></a>
+                            <a data-fancybox="gallery-1" data-type="iframe" data-src="https://pano.autodesk.com/pano.html?url=jpgs/55c299c2-073e-4fde-a955-c648af79a3e8&version=2" href="javascript:;"><img src="images/images-work-1/360-panorama.jpg"></a>
+                        </div>
+
+                        <div style="display: none; background: #202136; width: 500px; height: 300px;" id="hidden-description-1">
+                            <p>Course on BIM-management III-stream 2022-2023 The course is devoted to the reconstruction of objects of the XVI All-Russian industrial and art exhibition of 1896 in Nizhny Novgorod. Our team carried out section No. 32 with the pavilions of the Department of Udelov and the photographer M. Dmitriev located on it.
+                                The following programs were used on the course: Renga, NanoCAD, Model Studio CS, Revit, Dropbox, CADLib, Pilot-BIM, Larix.EST, Blender, D5 Render, ArchiCAD, Rhino, Twinmotion.</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work-2">
+                    <div class="layer">
+                        <h3>Work-2</h3>
+                        <p>Text text text text text text text text text text</p>
+                        <a data-fancybox="gallery-2" data-src="#hidden-description-2" href="javascript:;"><span class="material-symbols-outlined">link</span></a>
+                        <div class="gallery-work-2" style="display:none">
+                            <a data-fancybox="gallery-2" href="images/images-work-1/Screenshot_1.jpg"><img src="images/images-work-1/Screenshot_1.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_2.jpg"><img src="images/images-work-1/Screenshot_2.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_3.jpg"><img src="images/images-work-1/Screenshot_3.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_4.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_5.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_6.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_7.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_8.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_9.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_10.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_11.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_12.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_13.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_14.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_15.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_16.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_17.jpg"></a>
+                            <a data-fancybox="gallery-2" href="images/images-work-2/Screenshot_18.jpg"></a>
+
+                            <div style="display: none; background: #202136; width: 500px; height: 300px;" id="hidden-description-2">
+                                <p>Course on BIM-management III-stream 2022-2023 The course is devoted to the reconstruction of objects of the XVI All-Russian industrial and art exhibition of 1896 in Nizhny Novgorod. Our team carried out section No. 32 with the pavilions of the Department of Udelov and the photographer M. Dmitriev located on it.
+                                    The following programs were used on the course: Renga, NanoCAD, Model Studio CS, Revit, Dropbox, CADLib, Pilot-BIM, Larix.EST, Blender, D5 Render, ArchiCAD, Rhino, Twinmotion.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work-3">
+                    <div class="layer">
+                        <h3>Work-3</h3>
+                        <p>Text text text text text text text text text text</p>
+                        <a data-fancybox="gallery-3" data-src="#hidden-description-3" href="javascript:;"><span class="material-symbols-outlined">link</span></a>
+                        <div class="gallery-work-3" style="display:none">
+                            <a data-fancybox="gallery-3" href="images/images-work-1/Screenshot_1.jpg"><img src="images/images-work-1/Screenshot_1.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_2.jpg"><img src="images/images-work-1/Screenshot_2.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_3.jpg"><img src="images/images-work-1/Screenshot_3.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_4.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_5.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_6.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_7.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_8.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_9.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_10.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_11.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_12.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_13.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_14.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_15.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_16.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_17.jpg"></a>
+                            <a data-fancybox="gallery-3" href="images/images-work-3/Screenshot_18.jpg"></a>
+
+                            <div style="display: none; background: #202136; width: 500px; height: 300px;" id="hidden-description-3">
+                                <p>Course on BIM-management III-stream 2022-2023 The course is devoted to the reconstruction of objects of the XVI All-Russian industrial and art exhibition of 1896 in Nizhny Novgorod. Our team carried out section No. 32 with the pavilions of the Department of Udelov and the photographer M. Dmitriev located on it.
+                                    The following programs were used on the course: Renga, NanoCAD, Model Studio CS, Revit, Dropbox, CADLib, Pilot-BIM, Larix.EST, Blender, D5 Render, ArchiCAD, Rhino, Twinmotion.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a data-fancybox data-type="iframe" data-src="https://online.fliphtml5.com/enssn/afep/" href="javascript:;" class="extra-port">See more</a>
+        </div>
+    </div>
+
+<!-- ------Contact------ -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="contact-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> ar.rakhmatulin@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+39 331 899 49 51</p>
+                    <div class="social-icons">
+                        <a href="https://t.me/Ar_Rakhmat"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.facebook.com/rinat.rakhmatulin.3/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ar.rakhmat/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://medium.com/@ar.rakhmat"><i class="fa-brands fa-medium"></i></a>
+                    </div>
+                    <a href="cv/my-cv.pdf" download class="cv">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <textarea name="message" rows="8" placeholder="Your Message"></textarea>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------Footer------ -->
+
+    <div id="footer">
+        <p>Copyright © Ar.Rakhmat. Made with <i class="fa-solid fa-heart"></i> in 2023</p>
+    </div>
+
+<!-- ------JS-Tab------ -->
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    } 
+</script>
+
+<!-- ------JS-Volume------ -->
+
+<script>
+    let audio = document.getElementById("music-id");
+    audio.volume = 0.5;
+</script>
+
+<!-- ------JS-Play------ -->
+
+<script>
+    
+    document.getElementById('play').addEventListener('click', function (){
+        var music = document.getElementById('music-id');
+        if(this.className == 'is-playing'){
+            this.className = "";
+            this.innerHTML = "Play";
+            music.pause();
+        }else{
+            this.className = "is-playing";
+            this.innerHTML = "Pause";
+            music.play();
+        }
+    });
+
+
+</script>
+
+<!-- ------JS-Sidemenu------ -->
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<!-- ------JS-Contact-form------ -->
+
+
+
+<!-- ------JS-Fancybox------ -->
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+
+<script>
+    const config = {
+        infobar: true,
+        loop: true,
+        buttons: [
+            "zoom",
+            "slideShow",
+            "fullScreen",
+            "thumbs",
+            "close",
+        ],
+        protect: true,
+        thumbs: {
+            autoStart: true,
+        },
+    };
+
+    $('[data-fancybox="gallery-1"]').fancybox(config);
+
+    $('[data-fancybox="gallery-2"]').fancybox(config);
+
+    $('[data-fancybox="gallery-3"]').fancybox(config);
+</script>
+
+</body>
+</html>
